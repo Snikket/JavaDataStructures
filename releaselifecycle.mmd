@@ -1,0 +1,26 @@
+---
+title: Release Lifecycle
+
+---
+gitGraph
+    commit id:"fix/VBQT-1234"
+    commit id:"story/VBQT-5678"
+    branch release/1.28
+    checkout release/1.28
+    commit id:"release/1.28.0" tag:"1.28.0"
+    checkout main
+    commit id:"VBQT-7777"
+    commit id:"VBQT-9999"
+    checkout release/1.28
+    branch fix/VBQT-1111
+    checkout fix/VBQT-1111
+    commit id:"fix/VBQT-1111"
+    checkout release/1.28
+    merge fix/VBQT-1111
+    checkout main
+    merge fix/VBQT-1111
+    checkout release/1.28
+    commit id:"release/1.28.1" tag:"1.28.1"
+    checkout main
+    commit id:"fix/VBQT-2993"
+    commit id:"story/VBQT-5556"
